@@ -7,4 +7,8 @@ describe('triangleTracker', function() {
     expect(triangleTracker(30,30,30)).to.equal(true);
   });
 
+  it("is isosceles?", function() {
+    expect(triangleTracker(30,30,50)).to.equal(true);
+  });
+
 });
