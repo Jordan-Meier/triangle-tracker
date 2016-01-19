@@ -1,6 +1,6 @@
 describe('triangleTracker', function() {
   it("is triangle?", function() {
-    expect(triangleTracker(20,50,20)).to.equal(false);
+    expect(triangleTracker(20,30,60)).to.equal(false);
   });
 
   it("is equilateral?", function (){
@@ -9,6 +9,10 @@ describe('triangleTracker', function() {
 
   it("is isosceles?", function() {
     expect(triangleTracker(30,30,50)).to.equal(true);
+  });
+
+  it("is scalene?", function () {
+    expect(triangleTracker(30,40,50)).to.equal(true);
   });
 
 });
